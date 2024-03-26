@@ -20,7 +20,7 @@ public class Cantidad_Ventas_Por_Producto {
         for (String[] venta : ventasData) {
             String idProducto = venta[2];
             String producto = productMap.get(idProducto);
-            venta[venta.length - 1] = producto != null ? producto : "PRODUCTO NO ENCONTRADO";
+            venta[venta.length - 1] = producto != null ? producto : "PRODUCT NAME";
         }
 
         System.out.println("Tabla final:");
